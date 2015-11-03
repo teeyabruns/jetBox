@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JetBoxHome.Master.cs" Inherits="JetBox.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link type ="text/css" rel="stylesheet" href="masterStyle.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+             <div class ="header">
+                <ul>
+				<li id ="tab1"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat ="server"></asp:ContentPlaceHolder></li>								
+				<li id ="tab2"><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat ="server"></asp:ContentPlaceHolder></li>
+				<li id ="tab3"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat ="server"></asp:ContentPlaceHolder></li>
+				<li id ="tab4"><asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat ="server"></asp:ContentPlaceHolder></li>
+				</ul>
+			</div>
+
+        <asp:ContentPlaceHolder ID="MainContentArea" runat="server">
+
+
+        </asp:ContentPlaceHolder>
+
+    <footer>
+    Copyright © 2015 Texas A&M University-Corpus Christi • 6300 Ocean Dr., Corpus Christi, TX. 78412 • 361.825.5700
+    </footer> 
+    </form>
+    <p>
+        This is a change that I just made right now Teeya is stupid hahahahahahahaha jk or am I? ;)</p>
+</body>
+</html>
