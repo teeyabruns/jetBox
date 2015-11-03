@@ -1,0 +1,64 @@
+﻿
+.header{
+    margin: 0; 
+    padding: 0;
+    width: 1200px; 
+    height: 100px; 
+    border: 0 none; 
+    outline: 0 none; 
+    vertical-align: baseline; 
+    text-align: center; 
+    font-family: Arial; 
+    padding-top: 8px; 
+    padding-left: 10px; 
+    text-decoration: none; 
+}
+
+#tab1{
+    float: left; 
+    height: 35px; 
+    width: 22%; 
+    min-height: 29px; 
+    padding-right: 20px; 
+    padding-left:4px; 
+    padding-top: 8px; 
+    list-style-type: none;
+    background: transparent url(jetLogo.png) repeat repeat-x scroll right top; 
+}
+
+#tab2{
+    float: left; 
+    height: 35px; 
+    width: 22%; 
+    min-height: 29px; 
+    padding-right: 20px; 
+    padding-left:4px; 
+    padding-top: 8px; 
+    list-style-type: none;
+    background-color: blue;
+}
+
+#tab3{
+    float: left; 
+    height: 35px; 
+    width: 22%; 
+    min-height: 29px; 
+    padding-right: 20px; 
+    padding-left:4px; 
+    padding-top: 8px; 
+    list-style-type: none;
+    background-color: green;
+}
+
+#tab4{
+    float: left; 
+    height: 35px; 
+    width: 22%; 
+    min-height: 29px; 
+    padding-right: 20px; 
+    padding-left:4px; 
+    padding-top: 8px; 
+    list-style-type: none;
+   background-color: yellow;
+}
+
