@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="JetBox.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="JetBox.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -31,6 +31,9 @@
                 <asp:Button ID="ButtonSignin" runat="server" Text="Submit" OnClick="ButtonSignin_Click" />
                 <br />
                 <p><a href="\Login.aspx">Already have an account?</a></p>
+                <br />
+                <br />
+                <p><a href="\AdminLogIn.aspx">Admin Log In</a></p>
         </div>
         </div>
 </asp:Content>
