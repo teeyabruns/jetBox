@@ -66,8 +66,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="signupBackground.jpg" />
     <Content Include="packages.config" />
     <Content Include="JetBoxHome.Master" />
+    <Content Include="home.aspx" />
+    <Content Include="signup.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -78,6 +81,7 @@
   <ItemGroup>
     <Content Include="jetLogo.png" />
     <Content Include="masterStyle.css" />
+    <Content Include="signup.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +92,20 @@
     </Compile>
     <Compile Include="JetBoxHome.Master.designer.cs">
       <DependentUpon>JetBoxHome.Master</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

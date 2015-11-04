@@ -18,3 +18,23 @@
 \\mac\home\documents\visual studio 2015\Projects\JetBox\JetBox\obj\Debug\JetBox.csprojResolveAssemblyReference.cache
 \\mac\home\documents\visual studio 2015\Projects\JetBox\JetBox\obj\Debug\JetBox.dll
 \\mac\home\documents\visual studio 2015\Projects\JetBox\JetBox\obj\Debug\JetBox.pdb
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\obj\Debug\JetBox.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\obj\Debug\JetBox.dll
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\obj\Debug\JetBox.pdb
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\Microsoft.CSharp.Core.targets
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\csc.exe
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\System.Collections.Immutable.dll
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\System.Reflection.Metadata.dll
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\vbc.exe
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\VBCSCompiler.exe
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\roslyn\VBCSCompiler.exe.config
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\JetBox.dll.config
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\JetBox.dll
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\JetBox.pdb
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\psf\Home\Documents\git\jetBox\jetBox\JetBox\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml

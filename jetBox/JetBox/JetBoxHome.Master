@@ -17,6 +17,7 @@
 				<li id ="tab2"><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat ="server"></asp:ContentPlaceHolder></li>
 				<li id ="tab3"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat ="server"></asp:ContentPlaceHolder></li>
 				<li id ="tab4"><asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat ="server"></asp:ContentPlaceHolder></li>
+                <li id ="tab5"><asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat ="server"></asp:ContentPlaceHolder></li>
 				</ul>
 			</div>
 
@@ -24,14 +25,6 @@
 
 
         </asp:ContentPlaceHolder>
-
-    <footer>
-    Copyright © 2015 Texas A&M University-Corpus Christi • 6300 Ocean Dr., Corpus Christi, TX. 78412 • 361.825.5700
-    </footer> 
     </form>
-    <p>
-        This is a change that I just made right now Teeya is stupid hahahahahahahaha jk or am I? ;)</p>
-    <p>
-        This is a change made by Justin. </p>
 </body>
 </html>

@@ -67,6 +67,15 @@ namespace JetBox {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder4;
         
         /// <summary>
+        /// ContentPlaceHolder6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder6;
+        
+        /// <summary>
         /// MainContentArea control.
         /// </summary>
         /// <remarks>

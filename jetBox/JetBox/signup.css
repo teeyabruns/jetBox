@@ -1,0 +1,14 @@
+﻿#SignupDiv{
+    margin: 100px 10px 100px 250px; 
+    width: 250px;
+    text-align:center;
+    background-color: white;
+}
+
+#DisplaySignupDiv {
+    margin-top: 0;
+    margin-left: 250px;
+    width: 100%;
+    height: 800px;
+    background-image: url(signupBackground.jpg);
+}
