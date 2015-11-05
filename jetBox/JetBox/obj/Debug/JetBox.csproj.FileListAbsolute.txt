@@ -58,3 +58,6 @@ C:\Users\Teeya\Desktop\git\jetBox\jetBox\JetBox\bin\Microsoft.CodeDom.Providers.
 C:\Users\Teeya\Desktop\git\jetBox\jetBox\JetBox\obj\Debug\JetBox.csprojResolveAssemblyReference.cache
 C:\Users\Teeya\Desktop\git\jetBox\jetBox\JetBox\obj\Debug\JetBox.dll
 C:\Users\Teeya\Desktop\git\jetBox\jetBox\JetBox\obj\Debug\JetBox.pdb
+\\Mac\Home\Desktop\git\jetBox\jetBox\JetBox\obj\Debug\JetBox.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\git\jetBox\jetBox\JetBox\obj\Debug\JetBox.dll
+\\Mac\Home\Desktop\git\jetBox\jetBox\JetBox\obj\Debug\JetBox.pdb
