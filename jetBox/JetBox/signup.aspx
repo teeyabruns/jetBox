@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="JetBox.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <link type ="text/css" rel="stylesheet" href="signup.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
@@ -17,7 +18,6 @@
         Sign In</p>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-        <link type ="text/css" rel="stylesheet" href="signup.css" />
         <div id ="DisplaySignupDiv">
         <div id ="SignupDiv">
             <p style="text-align: center">Open an account!</p>

@@ -1,0 +1,22 @@
+﻿#LoginDiv{
+    float: right;
+    margin: 100px 250px 0 10px;
+    padding: 10px 10px 10px 10px;
+    width: 30%;
+    text-align:center;
+    background-color:cornflowerblue;
+}
+
+#DisplayLoginDiv{
+    float:left;
+    width: 800px;
+    height:500px;
+    padding: 0 100px 0 0;
+    margin: 0 0 0 100px;
+     background-image:url(signupBackground.jpg);
+}
+
+a:link{
+    text-decoration:none;
+    color:black;
+}

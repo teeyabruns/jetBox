@@ -73,8 +73,11 @@
     <Content Include="SignUp.aspx" />
     <Content Include="AdminMain.aspx" />
     <Content Include="AdminInventory.aspx" />
+    <Content Include="home.css" />
+    <Content Include="Login.css" />
     <Content Include="UserProfile.aspx" />
     <Content Include="MovieList.aspx" />
+    <Content Include="Login.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -113,12 +116,14 @@
     </Compile>
     <Compile Include="AdminMain.aspx.cs">
       <DependentUpon>AdminMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminMain.aspx.designer.cs">
       <DependentUpon>AdminMain.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminInventory.aspx.cs">
       <DependentUpon>AdminInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminInventory.aspx.designer.cs">
       <DependentUpon>AdminInventory.aspx</DependentUpon>
@@ -136,6 +141,13 @@
     </Compile>
     <Compile Include="MovieList.aspx.designer.cs">
       <DependentUpon>MovieList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
