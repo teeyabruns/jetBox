@@ -10,6 +10,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <div id="headering" style="height: 100px"></div>
     <form id="form1" runat="server">
              <div class ="header">
                 <ul>
@@ -21,11 +22,21 @@
 				</ul>
 			</div>
 
+        <div id="content">
         <asp:ContentPlaceHolder ID="MainContentArea" runat="server">
 
 
         </asp:ContentPlaceHolder>
+    </div>
+    </form> 
+    <div id="foot">
+        <footer><p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&copy; 2015 All Rights Reserved to JetBox</p>
 
-    </form>
+            </footer>
+    </div> 
 </body>
 </html>

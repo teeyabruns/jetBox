@@ -26,7 +26,7 @@
                 <asp:Label ID="LabelIDWarning" runat="server" Text="*Required" Visible="False"></asp:Label>
                 <p>Email:</p>
                 <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
-                <asp:Label ID="LabelEmailWarning" runat="server" Text="*Rquired" Visible="False"></asp:Label>
+                <asp:Label ID="LabelEmailWarning" runat="server" Text="*Required" Visible="False"></asp:Label>
                 <br /><br />
                 <asp:Button ID="ButtonSignin" runat="server" Text="Submit" OnClick="ButtonSignin_Click" />
                 <br />

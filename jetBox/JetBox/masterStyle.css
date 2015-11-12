@@ -1,5 +1,6 @@
 ﻿
 .header{
+    align-content:center;
     margin: 0 0 20px 0; 
     padding: 0;
     width: 100%; 
@@ -14,6 +15,42 @@
     text-decoration: none; 
 }
 
+#headering
+{
+	margin:0 auto;
+	background-image:url(jetBoxLogoType1.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	margin-bottom:0%;
+	height:0px;
+	width:550px;
+	align-content:center;
+}
+
+#content
+{
+    background-color: lightsteelblue;
+    width: 83%;
+    margin-left: 40px;
+    margin-right: 60px;
+    margin-top: 5px;
+    padding-right: 10px; 
+    padding-left: 10px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+html 
+{ 
+    /*background-color: aqua;*/
+  background: url(cloudBackground.jpg) repeat center center fixed; 
+  background-size: cover;
+  margin-top:0;
+}
+
+
+
 #tab1{
     float: left; 
     height: 35px; 
@@ -26,7 +63,7 @@
     list-style-type: none;
     border: solid black;
    /*background-color: blue;*/
-   background: aqua url() repeat-x scroll right top;
+   background: white url() repeat-x scroll right top;
 }
 
 #tab2{
@@ -41,7 +78,7 @@
     list-style-type: none;
     border: solid black;
    /*background-color: blue;*/
-   background: blue url() repeat-x scroll right top;
+   background: lightsteelblue url() repeat-x scroll right top;
 }
 
 #tab3{
@@ -56,7 +93,7 @@
     list-style-type: none;
     border: solid black;
    /*background-color: blue;*/
-   background: blue url() repeat-x scroll right top;
+   background: lightsteelblue url() repeat-x scroll right top;
 }
 
 #tab4{
@@ -71,7 +108,7 @@
     list-style-type: none;
     border: solid black;
    /*background-color: blue;*/
-   background: blue url() repeat-x scroll right top;
+   background: lightsteelblue url() repeat-x scroll right top;
 }
 
 #tab5{
@@ -86,5 +123,24 @@
     list-style-type: none;
     border: solid black;
    /*background-color: blue;*/
-   background: blue url() repeat-x scroll right top;
+   background: lightsteelblue url() repeat-x scroll right top;
+}
+
+#footerList
+{
+	display:inline;
+	margin-left: 50px;
+    margin-right: 50px;
+    list-style:none;
+    list-style-type:none;
+}
+
+#footer
+{
+    align-content:center;
+	display: inline;
+	padding: 3%;
+
+	
+	margin-left:50px;
 }
