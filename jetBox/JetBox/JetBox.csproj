@@ -75,6 +75,8 @@
     <Content Include="AdminInventory.aspx" />
     <Content Include="home.css" />
     <Content Include="Login.css" />
+    <Content Include="slide_engine.js" />
+    <Content Include="slide_window.css" />
     <Content Include="UserProfile.aspx" />
     <Content Include="MovieList.aspx" />
     <Content Include="Login.aspx" />
