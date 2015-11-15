@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="main_background1.jpg" />
+    <Content Include="main_background2.jpg" />
     <Content Include="signupBackground.jpg" />
     <Content Include="packages.config" />
     <Content Include="JetBoxHome.Master" />

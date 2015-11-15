@@ -48,7 +48,7 @@
 </div>
 <div>
 Coming Soon!
-    <div id="wowslider-container1">
+<div id="wowslider-container1">
 <div class="ws_images"><ul>
 <li><img src="http://wowslider.com/sliders/demo-3/data1/images/bratislavacastle.jpg" alt="Bratislava castle, Slovakia timeline right to left rotator tab" title="Bratislava castle, Slovakia" id="wows1_0"/></li>
 <li><img src="http://wowslider.com/sliders/demo-3/data1/images/bratislava.jpg" alt="Bratislava, Slovakia simple header banner free download for ie8" title="Bratislava, Slovakia" id="wows1_1"/></li>
