@@ -35,7 +35,7 @@
             <p>
                 Password:</p>
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-            <asp:Label ID="LabelPasswordWarning" runat="server" Text="*Rquired" Visible="False"></asp:Label>
+            <asp:Label ID="LabelPasswordWarning" runat="server" Text="*Required" Visible="False"></asp:Label>
             <br />
             <br />
             <asp:Button ID="ButtonSignin" runat="server" OnClick="ButtonSignin_Click" Text="Submit" />

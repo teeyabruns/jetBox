@@ -56,7 +56,7 @@ namespace JetBox
                     //int cat = (int)cmd.ExecuteScalar();
                     if (cat == 0)
                     {
-                        LabelIDWarning.Text = "Sucsess!";
+                        LabelIDWarning.Text = "Success!";
                         LabelIDWarning.Visible = true;
                         LabelEmailWarning.Visible = false;
 
@@ -67,7 +67,7 @@ namespace JetBox
                     }
                     else
                     {
-                        LabelIDWarning.Text = "Not Uniqe!";
+                        LabelIDWarning.Text = "Not Unique!";
                         LabelIDWarning.Visible = true;
                     }
 

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Sql;
+using System.Data.SqlClient;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -31,6 +33,14 @@ namespace JetBox
         //add movies
         protected void InventoryButton_Click(object sender, EventArgs e)
         {
+            /*SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "INSERT INTO [Movie] (MOVIE_TITLE, MOVIE_GENRE, MOVIE_DESCRIPTION, MOVIE_RATING, MOVIE_QUANTITY) VALUES ('Pretty Woman', 'Drama', 'Prostitute and rich guy fall in love', 5, 15)";
+            cmd.Connection = db;
+            db.Open();
+            cmd.ExecuteNonQuery();
+            db.Close();*/
             Response.Redirect("./AdminInventory.aspx");
         }
 

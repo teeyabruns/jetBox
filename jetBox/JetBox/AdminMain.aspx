@@ -13,7 +13,8 @@
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-    <br />
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IPProjectConnectionString %>" SelectCommand="SELECT [MOVIE_ID], [MOVIE_TITLE], [MOVIE_GENRE], [MOVIE_DESCRIPTION], [MOVIE_RATING], [MOVIE_QUANTITY] FROM [Movie]"></asp:SqlDataSource>
+<br />
     <br />
     <asp:Button ID="InventoryButton" runat="server" Text="Manage Inventory" OnClick="InventoryButton_Click" />
     <br />
