@@ -21,30 +21,24 @@
 	background-image:url(jetBoxLogoType1.png);
 	background-repeat: no-repeat;
 	background-position:center;
-	margin-bottom:0%;
-	height:0px;
+	margin-bottom:0;
+	height:0;
 	width:550px;
 	align-content:center;
 }
 
 #content
-{
-    background-color: lightsteelblue;
-    width: 83%;
-    margin-left: 40px;
-    margin-right: 60px;
-    margin-top: 5px;
-    padding-right: 10px; 
-    padding-left: 10px; 
-    padding-top: 20px;
-    padding-bottom: 20px;
+{   
+    width: 85%;
+    margin: 0; 
+    padding: 0;
 
 }
 
 html 
 { 
     /*background-color: aqua;*/
-  background: url(cloudBackground.jpg) repeat center center fixed; 
+  background: url(main_background1.jpg) repeat center center fixed; 
   background-size: cover;
   margin-top:0;
 }
@@ -61,7 +55,7 @@ html
     padding-top: 8px;
     padding-bottom:5px;
     list-style-type: none;
-    border: solid black;
+    border: solid gray;
    /*background-color: blue;*/
    background: white url() repeat-x scroll right top;
 }
@@ -76,9 +70,9 @@ html
     padding-top: 8px;
     padding-bottom:5px;
     list-style-type: none;
-    border: solid black;
+    border: solid gray;
    /*background-color: blue;*/
-   background: lightsteelblue url() repeat-x scroll right top;
+   background: white url() repeat-x scroll right top;
 }
 
 #tab3{
@@ -91,9 +85,9 @@ html
     padding-top: 8px;
     padding-bottom:5px;
     list-style-type: none;
-    border: solid black;
+    border: solid gray;
    /*background-color: blue;*/
-   background: lightsteelblue url() repeat-x scroll right top;
+   background: white url() repeat-x scroll right top;
 }
 
 #tab4{
@@ -106,9 +100,9 @@ html
     padding-top: 8px;
     padding-bottom:5px;
     list-style-type: none;
-    border: solid black;
+    border: solid gray;
    /*background-color: blue;*/
-   background: lightsteelblue url() repeat-x scroll right top;
+   background: white url() repeat-x scroll right top;
 }
 
 #tab5{
@@ -121,9 +115,9 @@ html
     padding-top: 8px;
     padding-bottom:5px;
     list-style-type: none;
-    border: solid black;
+    border: solid gray;
    /*background-color: blue;*/
-   background: lightsteelblue url() repeat-x scroll right top;
+   background: white url() repeat-x scroll right top;
 }
 
 #footerList

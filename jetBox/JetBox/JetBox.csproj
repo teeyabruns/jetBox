@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="main_background1.jpg" />
+    <Content Include="main_background2.jpg" />
     <Content Include="signupBackground.jpg" />
     <Content Include="packages.config" />
     <Content Include="JetBoxHome.Master" />
@@ -75,6 +77,8 @@
     <Content Include="AdminInventory.aspx" />
     <Content Include="home.css" />
     <Content Include="Login.css" />
+    <Content Include="slide_engine.js" />
+    <Content Include="slide_window.css" />
     <Content Include="UserProfile.aspx" />
     <Content Include="MovieList.aspx" />
     <Content Include="Login.aspx" />
