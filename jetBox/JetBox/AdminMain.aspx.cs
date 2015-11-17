@@ -33,14 +33,14 @@ namespace JetBox
         //add movies
         protected void InventoryButton_Click(object sender, EventArgs e)
         {
-            /*SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
+            SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "INSERT INTO [Movie] (MOVIE_TITLE, MOVIE_GENRE, MOVIE_DESCRIPTION, MOVIE_RATING, MOVIE_QUANTITY) VALUES ('Pretty Woman', 'Drama', 'Prostitute and rich guy fall in love', 5, 15)";
+            cmd.CommandText = "INSERT INTO [Movie] (MOVIE_TITLE, MOVIE_GENRE, MOVIE_DESCRIPTION, MOVIE_RATING, MOVIE_QUANTITY) VALUES ('Big Daddy', 'Comedy', 'A lazy law school grad adopts a kid to impress his girlfriend, but everything doesn't go as planned and he becomes the unlikely foster father.', 5, 15)";
             cmd.Connection = db;
             db.Open();
             cmd.ExecuteNonQuery();
-            db.Close();*/
+            db.Close();
             Response.Redirect("./AdminInventory.aspx");
         }
 
