@@ -13,8 +13,38 @@
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IPProjectConnectionString %>" SelectCommand="SELECT [MOVIE_ID], [MOVIE_TITLE], [MOVIE_GENRE], [MOVIE_DESCRIPTION], [MOVIE_RATING], [MOVIE_QUANTITY] FROM [Movie]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IPProjectConnectionString %>" SelectCommand="SELECT [User_ID], [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password], [User_PaymentInfo] FROM [User]" DeleteCommand="DELETE FROM [User] WHERE [User_ID] = @User_ID" InsertCommand="INSERT INTO [User] ([User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password], [User_PaymentInfo]) VALUES (@User_FName, @User_LName, @User_Address, @User_City, @User_State, @User_Zip, @User_Email, @User_Password, @User_PaymentInfo)" UpdateCommand="UPDATE [User] SET [User_FName] = @User_FName, [User_LName] = @User_LName, [User_Address] = @User_Address, [User_City] = @User_City, [User_State] = @User_State, [User_Zip] = @User_Zip, [User_Email] = @User_Email, [User_Password] = @User_Password, [User_PaymentInfo] = @User_PaymentInfo WHERE [User_ID] = @User_ID">
+        <DeleteParameters>
+            <asp:Parameter Name="User_ID" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="User_FName" Type="String" />
+            <asp:Parameter Name="User_LName" Type="String" />
+            <asp:Parameter Name="User_Address" Type="String" />
+            <asp:Parameter Name="User_City" Type="String" />
+            <asp:Parameter Name="User_State" Type="String" />
+            <asp:Parameter Name="User_Zip" Type="String" />
+            <asp:Parameter Name="User_Email" Type="String" />
+            <asp:Parameter Name="User_Password" Type="String" />
+            <asp:Parameter Name="User_PaymentInfo" Type="String" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="User_FName" Type="String" />
+            <asp:Parameter Name="User_LName" Type="String" />
+            <asp:Parameter Name="User_Address" Type="String" />
+            <asp:Parameter Name="User_City" Type="String" />
+            <asp:Parameter Name="User_State" Type="String" />
+            <asp:Parameter Name="User_Zip" Type="String" />
+            <asp:Parameter Name="User_Email" Type="String" />
+            <asp:Parameter Name="User_Password" Type="String" />
+            <asp:Parameter Name="User_PaymentInfo" Type="String" />
+            <asp:Parameter Name="User_ID" Type="Int32" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:IPProjectConnectionString2 %>" SelectCommand="SELECT [Movie_ID], [Movie_Title], [Movie_Genre], [Movie_Rating], [Movie_Description], [Movie_UserRating], [Movie_Quantity] FROM [Movie]"></asp:SqlDataSource>
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 <br />
+    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
     <br />
     <asp:Button ID="InventoryButton" runat="server" Text="Manage Inventory" OnClick="InventoryButton_Click" />
     <br />

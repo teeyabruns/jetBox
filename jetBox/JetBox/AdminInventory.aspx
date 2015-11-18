@@ -13,29 +13,30 @@
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="MOVIE_ID" DataSourceID="SqlDataSource1" ShowFooter="True">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Movie_ID" DataSourceID="SqlDataSource1" ShowFooter="True" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                <asp:TemplateField HeaderText="MOVIE_ID" InsertVisible="False" SortExpression="MOVIE_ID">
+                <asp:TemplateField HeaderText="Movie_ID" InsertVisible="False" SortExpression="Movie_ID">
                     <EditItemTemplate>
-                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("MOVIE_ID") %>'></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Movie_ID") %>'></asp:Label>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("MOVIE_ID") %>'></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("Movie_ID") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
                         <asp:LinkButton ValidationGroup="INSERT" OnClick="lbInsert_Click" ID="lbInsert" runat="server">Insert</asp:LinkButton>
                     </FooterTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="MOVIE_TITLE" SortExpression="MOVIE_TITLE">
+                <asp:TemplateField HeaderText="Movie_Title" SortExpression="Movie_Title">
                     <EditItemTemplate>
-                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("MOVIE_TITLE") %>'></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Movie_Title") %>'></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvEditTitle" runat="server" ErrorMessage="Title is a required field!"
                             ControlToValidate="TextBox1" Text="*" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label2" runat="server" Text='<%# Bind("MOVIE_TITLE") %>'></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text='<%# Bind("Movie_Title") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox ID="txtTitle" runat="server"></asp:TextBox>
@@ -44,9 +45,9 @@
                         </asp:RequiredFieldValidator>
                     </FooterTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="MOVIE_GENRE" SortExpression="MOVIE_GENRE">
+                <asp:TemplateField HeaderText="Movie_Genre" SortExpression="Movie_Genre">
                     <EditItemTemplate>
-                        <asp:DropDownList ID="ddMovieGenre" runat="server" SelectedValue='<%# Bind("MOVIE_GENRE") %>'>
+                        <asp:DropDownList ID="ddMovieGenre" runat="server" SelectedValue='<%# Bind("Movie_Genre") %>'>
                             <asp:ListItem>Select Genre</asp:ListItem>
                             <asp:ListItem>Action</asp:ListItem>
                             <asp:ListItem>Adventure</asp:ListItem>
@@ -60,7 +61,7 @@
                         </asp:RequiredFieldValidator>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label3" runat="server" Text='<%# Bind("MOVIE_GENRE") %>'></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text='<%# Bind("Movie_Genre") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
                         <asp:DropDownList ID="ddMovieGenre2" runat="server">
@@ -77,15 +78,44 @@
                         </asp:RequiredFieldValidator>
                     </FooterTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="MOVIE_DESCRIPTION" SortExpression="MOVIE_DESCRIPTION">
+                <asp:TemplateField HeaderText="Movie_Rating" SortExpression="Movie_Rating">
                     <EditItemTemplate>
-                        <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("MOVIE_DESCRIPTION") %>'></asp:TextBox>
+                        <asp:DropDownList ID="ddMovieRating" runat="server"  AppendDataBoundItems="True" SelectedValue='<%# Bind("Movie_Rating") %>'>
+                            <asp:ListItem>Select Rating</asp:ListItem>
+                            <asp:ListItem>G</asp:ListItem>
+                            <asp:ListItem>PG</asp:ListItem>
+                            <asp:ListItem>PG-13</asp:ListItem>
+                            <asp:ListItem>R</asp:ListItem>
+                        </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="rfvEditRating" runat="server" ErrorMessage="Rating is a required field!"
+                            ControlToValidate="ddMovieRating" Text="*" ForeColor="Red" InitialValue="Select Rating">
+                        </asp:RequiredFieldValidator>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label5" runat="server" Text='<%# Bind("Movie_Rating") %>'></asp:Label>
+                    </ItemTemplate>
+                    <FooterTemplate>
+                        <asp:DropDownList ID="ddMovieRating2" runat="server">
+                            <asp:ListItem>Select Rating</asp:ListItem>
+                            <asp:ListItem>G</asp:ListItem>
+                            <asp:ListItem>PG</asp:ListItem>
+                            <asp:ListItem>PG-13</asp:ListItem>
+                            <asp:ListItem>R</asp:ListItem>
+                        </asp:DropDownList>
+                        <asp:RequiredFieldValidator ValidationGroup="INSERT" ID="rfvInsertRating" runat="server" ErrorMessage="Rating is a required field!"
+                            ControlToValidate="ddMovieRating2" Text="*" ForeColor="Red" InitialValue="Select Rating">
+                        </asp:RequiredFieldValidator>
+                    </FooterTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Movie_Description" SortExpression="Movie_Description">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("Movie_Description") %>'></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvEditDescription" runat="server" ErrorMessage="Description is a required field!"
                             ControlToValidate="TextBox3" Text="*" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label4" runat="server" Text='<%# Bind("MOVIE_DESCRIPTION") %>'></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Text='<%# Bind("Movie_Description") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>
@@ -94,9 +124,9 @@
                         </asp:RequiredFieldValidator>
                     </FooterTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="MOVIE_RATING" SortExpression="MOVIE_RATING">
+                <asp:TemplateField HeaderText="Movie_UserRating" SortExpression="Movie_UserRating">
                     <EditItemTemplate>
-                        <asp:DropDownList ID="ddMovieRating" runat="server" SelectedValue='<%# Bind("MOVIE_RATING") %>'>
+                        <asp:DropDownList ID="ddMovieUserRating" runat="server" SelectedValue='<%# Bind("Movie_UserRating") %>'>
                             <asp:ListItem>Select Rating</asp:ListItem>
                             <asp:ListItem>0</asp:ListItem>
                             <asp:ListItem>1</asp:ListItem>
@@ -105,15 +135,15 @@
                             <asp:ListItem>4</asp:ListItem>
                             <asp:ListItem>5</asp:ListItem>
                         </asp:DropDownList>
-                        <asp:RequiredFieldValidator ID="rfvEditRating" runat="server" ErrorMessage="Rating is a required field!"
-                            ControlToValidate="ddMovieRating" Text="*" ForeColor="Red" InitialValue="Select Rating">
+                        <asp:RequiredFieldValidator ID="rfvEditUserRating" runat="server" ErrorMessage="Rating is a required field!"
+                            ControlToValidate="ddMovieUserRating" Text="*" ForeColor="Red" InitialValue="Select Rating">
                         </asp:RequiredFieldValidator>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label5" runat="server" Text='<%# Bind("MOVIE_RATING") %>'></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text='<%# Bind("Movie_UserRating") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
-                    <asp:DropDownList ID="ddMovieRating2" runat="server">
+                    <asp:DropDownList ID="ddMovieUserRating2" runat="server">
                             <asp:ListItem>Select Rating</asp:ListItem>
                             <asp:ListItem>0</asp:ListItem>
                             <asp:ListItem>1</asp:ListItem>
@@ -122,20 +152,20 @@
                             <asp:ListItem>4</asp:ListItem>
                             <asp:ListItem>5</asp:ListItem>
                         </asp:DropDownList>
-                        <asp:RequiredFieldValidator ValidationGroup="INSERT" ID="rfvInsertRating" runat="server" ErrorMessage="Rating is a required field!"
-                            ControlToValidate="ddMovieRating2" Text="*" ForeColor="Red" InitialValue="Select Rating">
+                        <asp:RequiredFieldValidator ValidationGroup="INSERT" ID="rfvInsertUserRating" runat="server" ErrorMessage="Rating is a required field!"
+                            ControlToValidate="ddMovieUserRating2" Text="*" ForeColor="Red" InitialValue="Select Rating">
                         </asp:RequiredFieldValidator>
                     </FooterTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="MOVIE_QUANTITY" SortExpression="MOVIE_QUANTITY">
+                <asp:TemplateField HeaderText="Movie_Quantity" SortExpression="Movie_Quantity">
                     <EditItemTemplate>
-                        <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("MOVIE_QUANTITY") %>'></asp:TextBox>
+                        <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("Movie_Quantity") %>'></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvEditQuantity" runat="server" ErrorMessage="Quantity is a required field!"
                             ControlToValidate="TextBox5" Text="*" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label6" runat="server" Text='<%# Bind("MOVIE_QUANTITY") %>'></asp:Label>
+                        <asp:Label ID="Label6" runat="server" Text='<%# Bind("Movie_Quantity") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox ID="txtQuantity" runat="server"></asp:TextBox>
@@ -145,27 +175,40 @@
                     </FooterTemplate>
                 </asp:TemplateField>
             </Columns>
+            <EditRowStyle BackColor="#2461BF" />
+            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+            <RowStyle BackColor="#EFF3FB" />
+            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+            <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
         <asp:ValidationSummary ValidationGroup="INSERT" ID="insertValidationSummary" ForeColor="Red" runat="server" />
         <asp:ValidationSummary ID="ValidationSummary1" ForeColor="Red" runat="server" />
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IPProjectConnectionString %>" DeleteCommand="DELETE FROM [Movie] WHERE [MOVIE_ID] = @MOVIE_ID" InsertCommand="INSERT INTO [Movie] ([MOVIE_TITLE], [MOVIE_GENRE], [MOVIE_DESCRIPTION], [MOVIE_RATING], [MOVIE_QUANTITY]) VALUES (@MOVIE_TITLE, @MOVIE_GENRE, @MOVIE_DESCRIPTION, @MOVIE_RATING, @MOVIE_QUANTITY)" SelectCommand="SELECT [MOVIE_ID], [MOVIE_TITLE], [MOVIE_GENRE], [MOVIE_DESCRIPTION], [MOVIE_RATING], [MOVIE_QUANTITY] FROM [Movie]" UpdateCommand="UPDATE [Movie] SET [MOVIE_TITLE] = @MOVIE_TITLE, [MOVIE_GENRE] = @MOVIE_GENRE, [MOVIE_DESCRIPTION] = @MOVIE_DESCRIPTION, [MOVIE_RATING] = @MOVIE_RATING, [MOVIE_QUANTITY] = @MOVIE_QUANTITY WHERE [MOVIE_ID] = @MOVIE_ID">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IPProjectConnectionString %>" DeleteCommand="DELETE FROM [Movie] WHERE [Movie_ID] = @Movie_ID" InsertCommand="INSERT INTO [Movie] ([Movie_Title], [Movie_Genre], [Movie_Rating], [Movie_Description], [Movie_UserRating], [Movie_Quantity]) VALUES (@Movie_Title, @Movie_Genre, @Movie_Rating, @Movie_Description, @Movie_UserRating, @Movie_Quantity)" SelectCommand="SELECT [Movie_ID], [Movie_Title], [Movie_Genre], [Movie_Rating], [Movie_Description], [Movie_UserRating], [Movie_Quantity] FROM [Movie]" UpdateCommand="UPDATE [Movie] SET [Movie_Title] = @Movie_Title, [Movie_Genre] = @Movie_Genre, [Movie_Rating] = @Movie_Rating, [Movie_Description] = @Movie_Description, [Movie_UserRating] = @Movie_UserRating, [Movie_Quantity] = @Movie_Quantity WHERE [Movie_ID] = @Movie_ID">
             <DeleteParameters>
-                <asp:Parameter Name="MOVIE_ID" Type="Int32" />
+                <asp:Parameter Name="Movie_ID" Type="Int32" />
             </DeleteParameters>
             <InsertParameters>
-                <asp:Parameter Name="MOVIE_TITLE" Type="String" />
-                <asp:Parameter Name="MOVIE_GENRE" Type="String" />
-                <asp:Parameter Name="MOVIE_DESCRIPTION" Type="String" />
-                <asp:Parameter Name="MOVIE_RATING" Type="String" />
-                <asp:Parameter Name="MOVIE_QUANTITY" Type="Int32" />
+                <asp:Parameter Name="Movie_Title" Type="String" />
+                <asp:Parameter Name="Movie_Genre" Type="String" />
+                <asp:Parameter Name="Movie_Rating" Type="String" />
+                <asp:Parameter Name="Movie_Description" Type="String" />
+                <asp:Parameter Name="Movie_UserRating" Type="Int32" />
+                <asp:Parameter Name="Movie_Quantity" Type="Int32" />
             </InsertParameters>
             <UpdateParameters>
-                <asp:Parameter Name="MOVIE_TITLE" Type="String" />
-                <asp:Parameter Name="MOVIE_GENRE" Type="String" />
-                <asp:Parameter Name="MOVIE_DESCRIPTION" Type="String" />
-                <asp:Parameter Name="MOVIE_RATING" Type="String" />
-                <asp:Parameter Name="MOVIE_QUANTITY" Type="Int32" />
-                <asp:Parameter Name="MOVIE_ID" Type="Int32" />
+                <asp:Parameter Name="Movie_Title" Type="String" />
+                <asp:Parameter Name="Movie_Genre" Type="String" />
+                <asp:Parameter Name="Movie_Rating" Type="String" />
+                <asp:Parameter Name="Movie_Description" Type="String" />
+                <asp:Parameter Name="Movie_UserRating" Type="Int32" />
+                <asp:Parameter Name="Movie_Quantity" Type="Int32" />
+                <asp:Parameter Name="Movie_ID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
 </asp:Content>
+

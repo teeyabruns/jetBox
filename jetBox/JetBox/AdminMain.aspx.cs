@@ -33,15 +33,26 @@ namespace JetBox
         //add movies
         protected void InventoryButton_Click(object sender, EventArgs e)
         {
-            SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
+            SqlConnection db = new SqlConnection(SqlDataSource2.ConnectionString);
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "INSERT INTO [Movie] (MOVIE_TITLE, MOVIE_GENRE, MOVIE_DESCRIPTION, MOVIE_RATING, MOVIE_QUANTITY) VALUES ('Big Daddy', 'Comedy', 'A lazy law school grad adopts a kid to impress his girlfriend, but everything doesn't go as planned and he becomes the unlikely foster father.', 5, 15)";
+            cmd.CommandText = "INSERT INTO [Movie] (Movie_Title, Movie_Genre, Movie_Rating, Movie_Description, Movie_UserRating, Movie_Quantity) VALUES ('Big Daddy', 'Comedy', 'PG-13', 'A lazy law school grad adopts a kid to impress his girlfriend, but everything does not go as planned and he becomes the unlikely foster father.', '5', '15')";
             cmd.Connection = db;
             db.Open();
-            cmd.ExecuteNonQuery();
-            db.Close();
-            Response.Redirect("./AdminInventory.aspx");
+            Label2.Text = cmd.CommandText;
+            try
+            {
+                cmd.ExecuteNonQuery();
+                Response.Redirect("./AdminInventory.aspx");
+            }
+            catch (Exception ex)
+            {
+                Label1.Text = "An error occured writing into database!";
+                Label1.Text = ex.ToString();
+                Label1.Visible = true;
+            }
+            finally { db.Close(); }
+           
         }
 
         //when the Back button is clicked, the admin will be sent back to the
