@@ -80,30 +80,18 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Movie_Rating" SortExpression="Movie_Rating">
                     <EditItemTemplate>
-                        <asp:DropDownList ID="ddMovieRating" runat="server"  AppendDataBoundItems="True" SelectedValue='<%# Bind("Movie_Rating") %>'>
-                            <asp:ListItem>Select Rating</asp:ListItem>
-                            <asp:ListItem>G</asp:ListItem>
-                            <asp:ListItem>PG</asp:ListItem>
-                            <asp:ListItem>PG-13</asp:ListItem>
-                            <asp:ListItem>R</asp:ListItem>
-                        </asp:DropDownList>
-                        <asp:RequiredFieldValidator ID="rfvEditRating" runat="server" ErrorMessage="Rating is a required field!"
-                            ControlToValidate="ddMovieRating" Text="*" ForeColor="Red" InitialValue="Select Rating">
+                        <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Movie_Rating") %>'></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvEditRating" runat="server" ErrorMessage="Movie rating is a required field!"
+                            ControlToValidate="TextBox6" Text="*" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label5" runat="server" Text='<%# Bind("Movie_Rating") %>'></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Text='<%# Bind("Movie_Rating") %>'></asp:Label>
                     </ItemTemplate>
                     <FooterTemplate>
-                        <asp:DropDownList ID="ddMovieRating2" runat="server">
-                            <asp:ListItem>Select Rating</asp:ListItem>
-                            <asp:ListItem>G</asp:ListItem>
-                            <asp:ListItem>PG</asp:ListItem>
-                            <asp:ListItem>PG-13</asp:ListItem>
-                            <asp:ListItem>R</asp:ListItem>
-                        </asp:DropDownList>
-                        <asp:RequiredFieldValidator ValidationGroup="INSERT" ID="rfvInsertRating" runat="server" ErrorMessage="Rating is a required field!"
-                            ControlToValidate="ddMovieRating2" Text="*" ForeColor="Red" InitialValue="Select Rating">
+                        <asp:TextBox ID="txtRating" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ValidationGroup="INSERT" ID="rfvInsertRating" runat="server" ErrorMessage="Movie rating is a required field!"
+                            ControlToValidate="txtRating" Text="*" ForeColor="Red">
                         </asp:RequiredFieldValidator>
                     </FooterTemplate>
                 </asp:TemplateField>
@@ -210,5 +198,5 @@
                 <asp:Parameter Name="Movie_ID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-</asp:Content>
+        </asp:Content>
 

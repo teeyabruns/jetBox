@@ -18,7 +18,7 @@ namespace JetBox
         {
             SqlDataSource1.InsertParameters["Movie_Title"].DefaultValue = ((TextBox)GridView1.FooterRow.FindControl("txtTitle")).Text;
             SqlDataSource1.InsertParameters["Movie_Genre"].DefaultValue = ((DropDownList)GridView1.FooterRow.FindControl("ddMovieGenre2")).SelectedValue;
-            SqlDataSource1.InsertParameters["Movie_Rating"].DefaultValue = ((DropDownList)GridView1.FooterRow.FindControl("ddMovieRating2")).SelectedValue;
+            SqlDataSource1.InsertParameters["Movie_Rating"].DefaultValue = ((TextBox)GridView1.FooterRow.FindControl("txtRating")).Text;
             SqlDataSource1.InsertParameters["Movie_Description"].DefaultValue = ((TextBox)GridView1.FooterRow.FindControl("txtDescription")).Text;
             SqlDataSource1.InsertParameters["Movie_UserRating"].DefaultValue = ((DropDownList)GridView1.FooterRow.FindControl("ddMovieUserRating2")).SelectedValue;
             SqlDataSource1.InsertParameters["Movie_Quantity"].DefaultValue = ((TextBox)GridView1.FooterRow.FindControl("txtQuantity")).Text;
