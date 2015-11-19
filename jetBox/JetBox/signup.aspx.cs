@@ -18,7 +18,7 @@ namespace JetBox
 
         protected void ButtonSignin_Click(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "" || txtUserID.Text == "")
+            if (txtEmail.Text == "")
             {
                 if (txtEmail.Text == "")
                 {
@@ -26,24 +26,23 @@ namespace JetBox
                     LabelEmailWarning.Visible = true;
                 }
 
-                if (txtUserID.Text == "")
-                {
-                    LabelIDWarning.Text = "*Required";
-                    LabelIDWarning.Visible = true;
-                }
-
             }
             else
             {
 
+<<<<<<< HEAD
                 string value = txtUserID.Text;
                  
+=======
+            
+                /* 
+>>>>>>> b462e4f8f7c7fcd2533d05743b15ea8f7a7abc84
                 SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
 
                 SqlCommand cmd = new SqlCommand();
 
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "SELECT COUNT(*) FROM [User] WHERE ([User_Username] = '" + value + "')";
+                cmd.CommandText = "SELECT COUNT(*) FROM [User] WHERE ([User_Email] = '" + value + "')";
                 cmd.Connection = db;
 
                 db.Open();
@@ -56,27 +55,26 @@ namespace JetBox
                     //int cat = (int)cmd.ExecuteScalar();
                     if (cat == 0)
                     {
-                        LabelIDWarning.Text = "Success!";
-                        LabelIDWarning.Visible = true;
-                        LabelEmailWarning.Visible = false;
+                        LabelEmailWarning.Text = "Success!";
+                        LabelEmailWarning.Visible = true;
 
-                        Session["uName"] = txtUserID.Text;
+                       
                         Session["uEmail"] = txtEmail.Text;
-                        Response.Redirect("/SignUp.aspx");
+                        Response.Redirect("/SignUp2.aspx");
 
                     }
                     else
                     {
-                        LabelIDWarning.Text = "Not Unique!";
-                        LabelIDWarning.Visible = true;
+                        LabelEmailWarning.Text = "Not Unique!";
+                        LabelEmailWarning.Visible = true;
                     }
 
                 }
                 catch
                 {
 
-                    LabelIDWarning.Text = "Error!";
-                    LabelIDWarning.Visible = true;
+                    LabelEmailWarning.Text = "Error!";
+                    LabelEmailWarning.Visible = true;
 
                 }
                 finally

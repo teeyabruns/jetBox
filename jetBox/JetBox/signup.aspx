@@ -18,9 +18,6 @@
         <div id ="DisplaySignupDiv">
         <div id ="SignupDiv">
             <p style="text-align: center">Open an account!</p>
-                <p>User Name:</p>
-                <asp:TextBox ID="txtUserID" runat="server" TextMode="SingleLine"></asp:TextBox>
-                <asp:Label ID="LabelIDWarning" runat="server" Text="*Required" Visible="False"></asp:Label>
                 <p>Email:</p>
                 <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
                 <asp:Label ID="LabelEmailWarning" runat="server" Text="*Required" Visible="False"></asp:Label>

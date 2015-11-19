@@ -12,7 +12,7 @@
 
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
      <p>Please fill out the fields below.</p>
-    <div id ="fields">
+    <div id ="fields" style ="background-color: gray">
         
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:InternetProgrammingTestConnectionString2 %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
         
