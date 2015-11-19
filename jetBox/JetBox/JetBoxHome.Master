@@ -18,7 +18,6 @@
 				<li id ="tab2"><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat ="server"></asp:ContentPlaceHolder></li>
 				<li id ="tab3"><asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat ="server"></asp:ContentPlaceHolder></li>
 				<li id ="tab4"><asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat ="server"></asp:ContentPlaceHolder></li>
-                <li id ="tab5"><asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat ="server"></asp:ContentPlaceHolder></li>
 				</ul>
 			</div>
 

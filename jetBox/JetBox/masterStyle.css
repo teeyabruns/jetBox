@@ -48,7 +48,7 @@ html
 #tab1{
     float: left; 
     height: 35px; 
-    width: 15%; 
+    width: 19%; 
     min-height: 29px; 
     padding-right: 20px; 
     padding-left:4px; 
@@ -63,7 +63,7 @@ html
 #tab2{
     float: left; 
     height: 35px; 
-    width: 15%; 
+    width: 19%; 
     min-height: 29px; 
     padding-right: 20px; 
     padding-left:4px; 
@@ -78,7 +78,7 @@ html
 #tab3{
     float: left; 
     height: 35px; 
-    width: 15%; 
+    width: 19%; 
     min-height: 29px; 
     padding-right: 20px; 
     padding-left:4px; 
@@ -93,22 +93,7 @@ html
 #tab4{
     float: left; 
     height: 35px; 
-    width: 15%; 
-    min-height: 29px; 
-    padding-right: 20px; 
-    padding-left:4px; 
-    padding-top: 8px;
-    padding-bottom:5px;
-    list-style-type: none;
-    border: solid gray;
-   /*background-color: blue;*/
-   background: white url() repeat-x scroll right top;
-}
-
-#tab5{
-    float: left; 
-    height: 35px; 
-    width: 15%; 
+    width: 19%; 
     min-height: 29px; 
     padding-right: 20px; 
     padding-left:4px; 

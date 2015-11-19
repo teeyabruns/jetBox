@@ -13,30 +13,52 @@
         .auto-style4 {
             width: 772px;
         }
+        .auto-style5 {
+            width: 33px;
+            height: 30px;
+        }
+        .auto-style6 {
+            width: 157px;
+            height: 30px;
+        }
+        .auto-style7 {
+            height: 30px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <p>
+        Home&nbsp;&nbsp;
+    </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <p>
+        Movie List</p>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
+    <p>
+        Sign Out</p>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
+    <p>
+        Edit Profile</p>
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
+    <p>
+        Cart</p>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
     
     <table style="width:100%;">
         <tr>
             <td class="auto-style3" colspan="3">
-                <asp:TextBox ID="NameTxt" runat="server" OnTextChanged="TextBox1_TextChanged" ReadOnly="True" Width="772px"></asp:TextBox>
+                <asp:TextBox ID="NameTxt" runat="server" ReadOnly="True" Width="772px"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style1">
                 <asp:TextBox ID="TextBox1" runat="server" ReadOnly="True">Your Movie List:</asp:TextBox>
-            </td>
+            &nbsp;</td>
             <td class="auto-style2">
                 <asp:TextBox ID="TextBox5" runat="server" ReadOnly="True" Width="145px">Rate Movie:</asp:TextBox>
             </td>
@@ -89,11 +111,11 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style1">
+            <td class="auto-style5">
                 <asp:Button ID="Button5" runat="server" Text="View Your Movie History" />
             </td>
-            <td class="auto-style2">&nbsp;</td>
-            <td>
+            <td class="auto-style6"></td>
+            <td class="auto-style7">
                 <asp:Button ID="Button4" runat="server" Text="Delete Account" Width="243px" />
             </td>
         </tr>
