@@ -83,6 +83,7 @@
     <Content Include="MovieList.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="NewMovieList.aspx" />
+    <Content Include="AdminLogin.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -160,6 +161,13 @@
     </Compile>
     <Compile Include="NewMovieList.aspx.designer.cs">
       <DependentUpon>NewMovieList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
