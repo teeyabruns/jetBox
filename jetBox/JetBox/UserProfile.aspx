@@ -43,10 +43,6 @@
     <p>
         Edit Profile</p>
 </asp:Content>
-<asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
-    <p>
-        Cart</p>
-</asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
     
     <table style="width:100%;">

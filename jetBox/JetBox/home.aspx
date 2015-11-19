@@ -18,10 +18,6 @@
     <p>
     Search</p>
 </asp:Content>
-<asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
-    <p>
-    Cart</p>
-</asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
     <div>
     <p style="margin-left: 300px; font-family: Arial; color: black; font-size:40px;">Popular Movies</p>

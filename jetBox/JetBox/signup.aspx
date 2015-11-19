@@ -13,10 +13,7 @@
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
 </asp:Content>
-<asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
-    <p>
-        Sign In</p>
-</asp:Content>
+
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
         <div id ="DisplaySignupDiv">
         <div id ="SignupDiv">
