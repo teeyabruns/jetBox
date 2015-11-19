@@ -1,8 +1,11 @@
 ﻿<%@ Page Title="Admin Inventory" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="AdminInventory.aspx.cs" Inherits="JetBox.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link type ="text/css" rel="stylesheet" href="home.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Back" />
+    <p>
+        <a href="AdminMain.aspx">Back</a>
+    </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 </asp:Content>
@@ -13,7 +16,7 @@
 <asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Movie_ID" DataSourceID="SqlDataSource1" ShowFooter="True" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Movie_ID" DataSourceID="SqlDataSource1" ShowFooter="True" CellPadding="4" ForeColor="#333333" GridLines="None" style="margin-right: 0px">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />

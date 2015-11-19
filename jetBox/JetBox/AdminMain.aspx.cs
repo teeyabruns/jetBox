@@ -18,7 +18,26 @@ namespace JetBox
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.Visible = false;
+            //GridView1.Visible = false;
+
+            //SqlConnection db = new SqlConnection(SqlDataSource2.ConnectionString);
+            //SqlCommand cmd = new SqlCommand();
+            //cmd.CommandType = System.Data.CommandType.Text;
+            //cmd.CommandText = "INSERT INTO [User] (User_FName, User_LName, User_Address, User_City, User_State, User_Zip, User_Email, User_Password, User_PaymentInfo) VALUES ('Userf', 'Userl', '123 User Dr.', 'User City', 'User State', '12345', 'user@user.com', 'user123!', 'yes')";
+            //cmd.Connection = db;
+            //db.Open();
+            ////Label2.Text = cmd.CommandText;
+            //try
+            //{
+            //    cmd.ExecuteNonQuery();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Label1.Text = "An error occured writing into database!";
+            //    Label1.Text = ex.ToString();
+            //    Label1.Visible = true;
+            //}
+            //finally { db.Close(); }
         }
 
         //when View Users button is clicked, the GridView of user database
@@ -33,25 +52,25 @@ namespace JetBox
         //add movies
         protected void InventoryButton_Click(object sender, EventArgs e)
         {
-            SqlConnection db = new SqlConnection(SqlDataSource2.ConnectionString);
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "INSERT INTO [Movie] (Movie_Title, Movie_Genre, Movie_Rating, Movie_Description, Movie_UserRating, Movie_Quantity) VALUES ('Big Daddy', 'Comedy', 'PG-13', 'A lazy law school grad adopts a kid to impress his girlfriend, but everything does not go as planned and he becomes the unlikely foster father.', '5', '15')";
-            cmd.Connection = db;
-            db.Open();
-            Label2.Text = cmd.CommandText;
-            try
-            {
-                cmd.ExecuteNonQuery();
+            //SqlConnection db = new SqlConnection(SqlDataSource2.ConnectionString);
+            //SqlCommand cmd = new SqlCommand();
+            //cmd.CommandType = System.Data.CommandType.Text;
+            //cmd.CommandText = "INSERT INTO [Movie] (Movie_Title, Movie_Genre, Movie_Rating, Movie_Description, Movie_UserRating, Movie_Quantity) VALUES ('Big Daddy', 'Comedy', 'PG-13', 'A lazy law school grad adopts a kid to impress his girlfriend, but everything does not go as planned and he becomes the unlikely foster father.', '5', '15')";
+            //cmd.Connection = db;
+            //db.Open();
+            //Label2.Text = cmd.CommandText;
+            //try
+            //{
+            //    cmd.ExecuteNonQuery();
                 Response.Redirect("./AdminInventory.aspx");
-            }
-            catch (Exception ex)
-            {
-                Label1.Text = "An error occured writing into database!";
-                Label1.Text = ex.ToString();
-                Label1.Visible = true;
-            }
-            finally { db.Close(); }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Label1.Text = "An error occured writing into database!";
+            //    Label1.Text = ex.ToString();
+            //    Label1.Visible = true;
+            //}
+            //finally { db.Close(); }
            
         }
 
