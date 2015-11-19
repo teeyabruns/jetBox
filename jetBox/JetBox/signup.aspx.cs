@@ -37,7 +37,7 @@ namespace JetBox
             {
 
                 string value = txtUserID.Text;
-                /* 
+                 
                 SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
 
                 SqlCommand cmd = new SqlCommand();
@@ -47,7 +47,7 @@ namespace JetBox
                 cmd.Connection = db;
 
                 db.Open();
-                */
+                
 
                 try
                 {
