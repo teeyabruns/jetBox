@@ -48,7 +48,9 @@ namespace JetBox
                 try
                 {
                     //This is a dummy variable until the database is installed
+
                     int cat = 0 ; 
+
                     cat = (int)cmd.ExecuteScalar();
                     if (cat == 0)
                     {
@@ -77,7 +79,7 @@ namespace JetBox
                 finally
                 {
 
-                    //db.Close();
+                    db.Close();
                 }
             }
         }

@@ -13,8 +13,6 @@
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
 </asp:Content>
-<asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
-</asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Movie_ID" DataSourceID="SqlDataSource1" ShowFooter="True" CellPadding="4" ForeColor="#333333" GridLines="None" style="margin-right: 0px">
             <AlternatingRowStyle BackColor="White" />

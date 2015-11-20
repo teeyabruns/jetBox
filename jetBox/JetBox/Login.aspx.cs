@@ -44,11 +44,12 @@ namespace JetBox
                 SqlCommand cmd = new SqlCommand();
 
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "SELECT COUNT(*) FROM [User] WHERE ([User_Username] = '" + userName + "')";
+                cmd.CommandText = "SELECT COUNT(*) FROM [User] WHERE ([User_Email] = '" + userName + "')";
                 cmd.Connection = db;
                 db.Open();
 
-                lab1I
+                LabelIDWarning.Text = cmd.ToString(); 
+
                 int cat = (int)cmd.ExecuteScalar();
 
                 /************************************************************************************************
