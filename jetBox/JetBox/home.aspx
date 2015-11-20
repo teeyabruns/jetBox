@@ -3,8 +3,7 @@
     <link type ="text/css" rel="stylesheet" href="home.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-    Home</p>
+    <p><a href="home.aspx">Home</a></p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
@@ -15,8 +14,7 @@
     <a href="Login.aspx">Sign In</a></p>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
-    <p>
-    Search</p>
+    <p><a href="ComingSoon.aspx">Coming Soon</a></p>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
     <div>
@@ -59,5 +57,5 @@
 <a href="#" class="ws_frame"></a>
 </div>
 </div>
-<footer>Footer</footer>
+    <br />
 </asp:Content>

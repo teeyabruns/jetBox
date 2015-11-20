@@ -2,17 +2,26 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <p>
+        Home&nbsp;&nbsp;
+    </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <p>
+        Movies</p>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
+    <p>
+        Sign In</p>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
+    <p>
+        Coming Soon</p>
 </asp:Content>
 
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
      <p>Please fill out the fields below.</p>
-    <div id ="fields" style ="background-color: gray">
+    <div id ="fields" style ="background-color: gray; text-align: center">
         
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString2 %>" SelectCommand="SELECT [User_ID], [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password], [User_PaymentInfo] FROM [User]"></asp:SqlDataSource>
         

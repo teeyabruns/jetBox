@@ -5,19 +5,25 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-        Home</p>
+        <a href ="home.aspx">Home</a></p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <p><a href ="MovieList.aspx">
+        Movies</a></p>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
+    <p><a href="Login.aspx">
+        Sign In</a></p>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
+    <p><a href="ComingSoon.aspx">
+        Coming Soon</a></p>
 </asp:Content>
 
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-        <div id ="DisplaySignupDiv">
-        <div id ="SignupDiv">
-            <p style="text-align: center">Open an account!</p>
+        <div id ="DisplaySignupDiv" style="padding: 50px 0 0 0">
+        <div id ="SignupDiv" style="margin: 0 0 0 350px; padding: 10px 10px 10px 10px">
+            <p style="text-align: center; margin-top: 50px">Open an account!</p>
                 <p>Email:</p>
                 <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
                 <asp:Label ID="LabelEmailWarning" runat="server" Text="*Required" Visible="False"></asp:Label>
