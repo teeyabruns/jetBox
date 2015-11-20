@@ -8,6 +8,9 @@
     <link type ="text/css" rel="stylesheet" href="MasterDesign.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+    <meta name="description" content="The description of my page" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <div id="logo">
@@ -25,7 +28,7 @@
 				<li id="tab4"><asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat ="server"></asp:ContentPlaceHolder></li>
 				</ul>
 			</div>
-        <div id="content">
+        <div id="content" style ="margin: 0 0 0 50px">
         <asp:ContentPlaceHolder ID="MainContentArea" runat="server">
 
 

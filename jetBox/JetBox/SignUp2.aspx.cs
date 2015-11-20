@@ -20,7 +20,7 @@ namespace JetBox
             LabelPassword1.Visible = false;
             LabelPassword2.Visible = false;
             txtuEmail.Text = (string)Session["uEmail"];
-            txtuName.Text = (string)Session["uName"];
+            txtuName.Text = (string)Session["uEmail"];
         }
 
         protected void ButtonSubmit_Click(object sender, EventArgs e)
