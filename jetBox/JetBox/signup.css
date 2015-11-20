@@ -6,9 +6,9 @@
 }
 
 #DisplaySignupDiv {
-    margin-top: 0;
-    margin-left: 0px;
-    width: 100%;
-    height: 800px;
-    background-image: url(signupBackground.jpg);
+
+
+    background-color: #c9f1fd;
+    margin: 0 auto;
+
 }

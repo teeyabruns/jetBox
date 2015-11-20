@@ -19,7 +19,7 @@
     Search</p>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-    <div>
+<div id="current">
     <p style="margin-left: 300px; font-family: Arial; color: black; font-size:40px;">Popular Movies</p>
 <link rel="stylesheet" type="text/css" href="slide_window.css" />
 
@@ -42,7 +42,7 @@
         <!-- End WOWSlider.com BODY section -->
 <br />
 </div>
-<div>
+<div id="coming">
 <p style="margin-left: 300px; font-family: Arial; color: black; font-size:40px;">Coming Soon!</p>
 <div id="wowslider-container1">
 <div class="ws_images"><ul>

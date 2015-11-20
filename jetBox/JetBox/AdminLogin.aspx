@@ -21,11 +21,7 @@
     <a href="MovieSearch.aspx">Search</a>
     </p>
 </asp:Content>
-<asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder6" runat="server">
-    <p>
-    Cart
-    </p>
-</asp:Content>
+
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString %>" SelectCommand="SELECT [Admin_ID], [Admin_Password], [Admin_FName], [Admin_LName], [Admin_Email] FROM [Admin]"></asp:SqlDataSource>
     Email:<br />
