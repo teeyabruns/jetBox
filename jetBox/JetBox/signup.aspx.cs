@@ -30,13 +30,10 @@ namespace JetBox
             else
             {
 
-<<<<<<< HEAD
-                string value = txtUserID.Text;
+
+                string value = txtEmail.Text;
                  
-=======
-            
-                /* 
->>>>>>> b462e4f8f7c7fcd2533d05743b15ea8f7a7abc84
+
                 SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
 
                 SqlCommand cmd = new SqlCommand();
@@ -52,7 +49,7 @@ namespace JetBox
                 {
                     //This is a dummy variable until the database is installed
                     int cat = 0 ; 
-                    //int cat = (int)cmd.ExecuteScalar();
+                    cat = (int)cmd.ExecuteScalar();
                     if (cat == 0)
                     {
                         LabelEmailWarning.Text = "Success!";

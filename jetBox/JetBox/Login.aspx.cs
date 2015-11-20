@@ -48,6 +48,7 @@ namespace JetBox
                 cmd.Connection = db;
                 db.Open();
 
+                lab1I
                 int cat = (int)cmd.ExecuteScalar();
 
                 /************************************************************************************************
