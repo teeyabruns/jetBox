@@ -27,8 +27,8 @@
                 <p><a href="\Login.aspx">Already have an account?</a></p>
                 <br />
                 <br />
-                <p><a href="\AdminLogIn.aspx">Admin Log In<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString2 %>" SelectCommand="SELECT [User_ID], [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password], [User_PaymentInfo] FROM [User]"></asp:SqlDataSource>
-                    </a></p>
+                <p><a href="\AdminLogIn.aspx">Admin Log In</a></p>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString2 %>" SelectCommand="SELECT [User_ID], [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password], [User_PaymentInfo] FROM [User]"></asp:SqlDataSource>
         </div>
         </div>
 </asp:Content>
