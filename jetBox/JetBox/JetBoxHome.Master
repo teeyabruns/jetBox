@@ -28,12 +28,12 @@
 				<li id="tab4"><asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat ="server"></asp:ContentPlaceHolder></li>
 				</ul>
 			</div>
-        <div id="content" style ="margin: 0 0 0 50px">
+        <div id="MainHolder">
         <asp:ContentPlaceHolder ID="MainContentArea" runat="server">
 
 
         </asp:ContentPlaceHolder>
-    </div>
+        </div>
     </form> 
     <div id="info">
                
@@ -57,12 +57,28 @@
 				    </ul>
                 </div>
 
-                        <div id="social">Social
+                        <div id="social">Social Media
 				    <ul>
-                        <li>Facebook logo link</li>
-                        <li>Instagram logo link</li>
-                        <li>Twitter logo link</li>
-                        <li>Youtube logo link</li>
+                        <li>
+                           <a href="default.asp">
+                                <img src="1448102625_twitter-bird-logo-logotype.png" style="width:48px;height:48px;border:0;">
+                           </a>
+                        </li>
+                        <li>                           
+                            <a href="default.asp">
+                                <img src="1448102774_facebook-f-letter-logo-logotype.png" style="width:48px;height:48px;border:0;">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="default.asp">
+                                <img src="1448102777_instagram-web-social-service-logo-logotype-photo.png" style="width:48px;height:48px;border:0;">
+                           </a>
+                        </li>
+                        <li>                           
+                            <a href="default.asp">
+                                <img src="1448102781_pinterest-p-logo-logotype.png" style="width:48px;height:48px;border:0;">
+                           </a>
+                        </li>
 
 
 				    </ul>
@@ -71,11 +87,13 @@
     </div>
 
 
+        <div id="foot">
+            
+            <p>©2015, JETBOX Automated Retail, LLC. All rights reserved.</p>
 
-
+         </div>
 
 </body>
 
-            <footer>
-                ©2015, JETBOX Automated Retail, LLC. All rights reserved. 
+    
 </html>

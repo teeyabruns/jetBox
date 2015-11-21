@@ -66,6 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1448102625_twitter-bird-logo-logotype.png" />
+    <Content Include="1448102774_facebook-f-letter-logo-logotype.png" />
+    <Content Include="1448102777_instagram-web-social-service-logo-logotype-photo.png" />
+    <Content Include="1448102781_pinterest-p-logo-logotype.png" />
     <Content Include="aurora_sky-1680x1050-2.jpg" />
     <Content Include="JetBoxLogoType3.png" />
     <Content Include="main_background1.jpg" />

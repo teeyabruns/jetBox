@@ -1,19 +1,17 @@
 ﻿#LoginDiv{
-    float: right;
-    margin: 100px 250px 0 10px;
-    padding: 10px 10px 10px 10px;
-    width: 30%;
+    width: 23%;
     text-align:center;
-    background-color:cornflowerblue;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2% 0% 2% 0%; 
+        border-radius: 15px;
 }
 
 #DisplayLoginDiv{
-    float:left;
-    width: 800px;
-    height:500px;
-    padding: 0 100px 0 0;
-    margin: 0 0 0 100px;
-     background-image:url(signupBackground.jpg);
+    background-color: #c9f1fd;
+    margin: 2% 0% 2% 0%; 
+    padding: 2% 0% 2% 0%; 
+        border-radius: 15px;
 }
 
 a:link{

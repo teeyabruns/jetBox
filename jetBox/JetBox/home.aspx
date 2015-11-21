@@ -17,8 +17,8 @@
     <p><a href="ComingSoon.aspx">Coming Soon</a></p>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-<div id="current">
-    <p style="margin-left: 300px; font-family: Arial; color: black; font-size:40px;">Popular Movies</p>
+    <div id="current">
+    <p style="margin-left: 300px; font-family: Arial; color: black; font-size:40px;">CURRENT MOVIES</p>
 <link rel="stylesheet" type="text/css" href="slide_window.css" />
 
 <div id="wowslider-container1">
@@ -41,7 +41,7 @@
 <br />
 </div>
 <div id="coming">
-<p style="margin-left: 300px; font-family: Arial; color: black; font-size:40px;">Coming Soon!</p>
+<p style="margin-left: 300px; font-family: Arial; color: black; font-size:40px;">COMING SOON!</p>
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
 <li><img src="https://image.tmdb.org/t/p/w185/1n9D32o30XOHMdMWuIT4AaA5ruI.jpg" alt="Bratislava castle, Slovakia timeline right to left rotator tab" title="Bratislava castle, Slovakia" id="wows1_0"/></li>

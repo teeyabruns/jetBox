@@ -1,21 +1,24 @@
-﻿#SignupDiv{
-    margin: 100px 10px 100px 250px; 
-    width: 250px;
-    text-align:center;
-    background-color: white;
-}
-
-#DisplaySignupDiv {
-<<<<<<< HEAD
+﻿#DisplaySignupDiv {
 
 
     background-color: #c9f1fd;
-    margin: 0 auto;
+    margin: 2% 0% 2% 0%; 
+    padding: 2% 0% 2% 0%; 
+    border-radius: 15px;
+   
+   
 
-=======
-    margin: 50px 0 0 0; 
-    width: 100%;
-    height: 800px;
-    background-image: url(signupBackground.jpg);
->>>>>>> origin/master
 }
+
+#SignupDiv{
+    width: 23%;
+    text-align:center;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2% 0% 2% 0%; 
+    border-radius: 15px;
+
+
+
+}
+
