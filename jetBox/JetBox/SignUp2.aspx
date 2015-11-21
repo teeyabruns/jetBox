@@ -20,10 +20,13 @@
 </asp:Content>
 
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-     <p>Please fill out the fields below.</p>
-    <div id ="fields" style ="background-color: gray; text-align: center">
+     <div id="MoreInfo" style ="background-color: #c9f1fd; text-align: center; border-radius: 6px; margin: 1% auto">
+        <p>Please provide additional information below.</p>
+
+     </div>
+    <div id ="fields" style ="background-color: #c9f1fd; text-align: center; border-radius: 15px">
         
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString2 %>" SelectCommand="SELECT [User_ID], [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password], [User_PaymentInfo] FROM [User]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString4 %>" SelectCommand="SELECT [User_FName], [User_LName], [User_Password], [User_PaymentInfo] FROM [User]"></asp:SqlDataSource>
         
         User Name:<br />
         <asp:TextBox ID="txtuName" runat="server" ReadOnly="True"></asp:TextBox>

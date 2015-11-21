@@ -6,12 +6,22 @@
 #current
 {
     background-color: #c9f1fd;
+            border-radius: 15px;
+            font-family: 'Helvetica';
+            font-weight: bold;
+            text-align: left;
+
 
 
 }
 
 #coming
 {
-    background-color:  #c9f1fd;
+    background-color: #c9f1fd;
+            border-radius: 15px;
+            font-family: 'Helvetica';
+            font-weight: bold;
+            text-align: left;
+
 
 }

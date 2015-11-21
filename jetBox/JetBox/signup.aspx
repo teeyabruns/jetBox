@@ -21,20 +21,20 @@
 </asp:Content>
 
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-        <div id ="DisplaySignupDiv" style="padding: 50px 0 0 0">
-        <div id ="SignupDiv" style="margin: 0 0 0 350px; padding: 10px 10px 10px 10px">
-            <p style="text-align: center; margin-top: 50px">Open an account!</p>
-                <p>Email:</p>
-                <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
-                <asp:Label ID="LabelEmailWarning" runat="server" Text="*Required" Visible="False"></asp:Label>
-                <br /><br />
-                <asp:Button ID="ButtonSignin" runat="server" Text="Submit" OnClick="ButtonSignin_Click" />
-                <br />
-                <p><a href="\Login.aspx">Already have an account?</a></p>
-                <br />
-                <br />
-                <p><a href="\AdminLogIn.aspx">Admin Log In</a></p>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString2 %>" SelectCommand="SELECT [User_ID], [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password], [User_PaymentInfo] FROM [User]"></asp:SqlDataSource>
-        </div>
+        <div id ="DisplaySignupDiv">
+            <div id ="SignupDiv">
+                <p style="text-align: center; margin-top: 50px">Open an account!</p>
+                    <p>Email:</p>
+                    <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
+                    <asp:Label ID="LabelEmailWarning" runat="server" Text="*Required" Visible="False"></asp:Label>
+                    <br /><br />
+                    <asp:Button ID="ButtonSignin" runat="server" Text="Submit" OnClick="ButtonSignin_Click" />
+                    <br />
+                    <p><a href="\Login.aspx">Already have an account?</a></p>
+                    <br />
+                    <br />
+                    <p><a href="\AdminLogIn.aspx">Admin Log In</a></p>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString4 %>" SelectCommand="SELECT [User_ID], [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password] FROM [User]"></asp:SqlDataSource>
+            </div>
         </div>
 </asp:Content>
