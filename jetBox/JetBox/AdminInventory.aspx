@@ -13,8 +13,13 @@
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Movie_ID" DataSourceID="SqlDataSource1" ShowFooter="True" CellPadding="4" ForeColor="#333333" GridLines="None" style="margin-right: 0px">
+    <div id="GridHolder" style="background-color: #c9f1fd;
+    margin: 2% 0% 2% 0%; 
+    padding: 2% 2% 2% 2%; 
+    border-radius: 15px;"> 
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Movie_ID" DataSourceID="SqlDataSource1" ShowFooter="True" CellPadding="4" ForeColor="#333333" GridLines="None" style="margin-right: 0px">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -199,5 +204,6 @@
                 <asp:Parameter Name="Movie_ID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+    </div>    
         </asp:Content>
 

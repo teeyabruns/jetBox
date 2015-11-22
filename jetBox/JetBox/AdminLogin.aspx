@@ -23,9 +23,11 @@
 </asp:Content>
 
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString %>" SelectCommand="SELECT [Admin_ID], [Admin_Password], [Admin_FName], [Admin_LName], [Admin_Email] FROM [Admin]"></asp:SqlDataSource>
     
-<div id="adminLogin" style="background-color:#c9f1fd; border-radius: 15px">
+<div id="adminLogin" style=" background-color: #c9f1fd;
+    margin: 2% 0% 2% 0%; 
+    padding: 2% 2% 2% 2%; 
+    border-radius: 15px;">
     Email:<br />
     <asp:TextBox ID="boxUsername" runat="server"></asp:TextBox>
     <asp:Label ID="usernameLbl" runat="server" Text="Label"></asp:Label>
@@ -37,6 +39,8 @@
     <br />
     <br />
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString4 %>" SelectCommand="SELECT [Admin_ID], [Admin_Password], [Admin_FName], [Admin_LName], [Admin_Email] FROM [Admin]"></asp:SqlDataSource>
+    
 </div>
 
 </asp:Content>

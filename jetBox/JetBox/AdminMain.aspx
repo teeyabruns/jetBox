@@ -15,8 +15,13 @@
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
     
-    <br />
-    <asp:Button ID="InventoryButton" runat="server" Text="Manage Inventory" OnClick="InventoryButton_Click" />
+<div id="AdminMainHolder" style="background-color: #c9f1fd;
+    margin: 2% 0% 2% 0%; 
+    padding: 2% 2% 2% 2%; 
+    border-radius: 15px;">
+<br />
+
+<asp:Button ID="InventoryButton" runat="server" Text="Manage Inventory" OnClick="InventoryButton_Click" />
 <br />
 <br />
 <br />
@@ -178,4 +183,6 @@
     <br />
 <br />
 <br />
+
+</div>
 </asp:Content>
