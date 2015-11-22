@@ -14,7 +14,7 @@
     <a href="Login.aspx">Sign In</a></p>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
-    <p><a href="ComingSoon.aspx">Coming Soon</a></p>
+    <p><a href="Checkout.aspx">Checkout</a></p>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
     <div id="current">
