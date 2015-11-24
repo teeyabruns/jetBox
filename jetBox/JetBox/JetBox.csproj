@@ -94,6 +94,9 @@
     <Content Include="SignUp2.aspx" />
     <Content Include="Movie.aspx" />
     <Content Include="ComingSoon.aspx" />
+    <Content Include="Checkout.aspx" />
+    <Content Include="RentSuccess.aspx" />
+    <Content Include="EditProfile.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -199,6 +202,27 @@
     </Compile>
     <Compile Include="ComingSoon.aspx.designer.cs">
       <DependentUpon>ComingSoon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RentSuccess.aspx.cs">
+      <DependentUpon>RentSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RentSuccess.aspx.designer.cs">
+      <DependentUpon>RentSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

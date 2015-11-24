@@ -27,21 +27,18 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-        Home&nbsp;&nbsp;
-    </p>
+    <p><a href="home.aspx">Home</a></p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
-        Movie List</p>
+       <a href="EditProfile.aspx">Edit Profile</a></p>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
     <p>
-        Sign Out</p>
+        <a href="Login.aspx">Sign Out</a></p>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
-    <p>
-        Edit Profile</p>
+    <p><a href="Checkout.aspx">Checkout</a></p>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
     
