@@ -14,7 +14,7 @@ namespace JetBox
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LabelCountry.Visible = false;
+            LabelAddress.Visible = false;
             LabelFirst.Visible = false;
             LabelLast.Visible = false;
             LabelPassword1.Visible = false;
@@ -28,15 +28,29 @@ namespace JetBox
         {
             string uFirst = txtFirst.Text,
                     uLast = txtLast.Text,
-                    uCountry = txtCountry.Text,
+                    uCountry = txtAddress.Text,
                     uPassword1 = txtPassword1.Text,
                     uPassword2 = txtPassword2.Text;
 
 
-            if (txtFirst.Text == "" || txtLast.Text == "" || txtPassword1.Text == "" || txtPassword2.Text == "")
+            if (txtFirst.Text == "" || txtLast.Text == "" || txtPassword1.Text == "" || txtPassword2.Text == "" || txtCity.Text == "" || txtAddress.Text == "" || txtAddress.Text == "" || txtPayment.Text == "")
             {
                 if (txtFirst.Text == "") LabelFirst.Visible = true;
                 else LabelFirst.Visible = false;
+                if (txtAddress.Text == "") LabelAddress.Visible = true;
+                else LabelAddress.Visible = false;
+                if (txtState.Text == "") LabelSate.Visible = true;
+                else LabelSate.Visible = false;
+                if (txtZip.Text == "") LabelZip.Visible = true;
+                else LabelZip.Visible = false;
+                if (txtPayment.Text == "") LabelPayment.Visible = true;
+                else LabelPayment.Visible = false;
+                if (txtPayment.Text == "") LabelPayment.Visible = true;
+                else LabelPayment.Visible = false;
+                if (txtCity.Text == "") LabelCity.Visible = true;
+                else LabelCity.Visible = false;
+                if (txtZip.Text == "") LabelZip.Visible = true;
+                else LabelZip.Visible = false;
                 if (txtLast.Text == "") LabelLast.Visible = true;
                 else LabelLast.Visible = false;
                 if (txtPassword1.Text == "") LabelPassword1.Visible = true;
@@ -84,7 +98,7 @@ namespace JetBox
             SqlCommand cmd = new SqlCommand();
 
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "INSERT INTO [User] (User_Username, User_Password, User_Email, User_FName, User_LName, User_Country) VALUES ('" + txtuName.Text + "','" + uPassword1 + "', '" + txtuEmail.Text + "','" + uFirst + "' , '" + uLast + "', '" + uCountry + "')";
+            cmd.CommandText = "INSERT INTO [User] (User_FName, User_LName, User_Address, User_City, User_State, User_Zip, User_Email, User_Password, User_PaymentInfo) VALUES ('" + txtFirst.Text + "','" + txtLast.Text + "', '" + txtAddress.Text + "','" + txtCity.Text + "' , '" + txtState.Text + "', '" + txtZip.Text + "', '" + txtuName.Text + "', '" + uPassword1 + "', '" + txtPayment.Text + "')";
             cmd.Connection = db;
 
             db.Open();

@@ -71,10 +71,18 @@
     <Content Include="1448102777_instagram-web-social-service-logo-logotype-photo.png" />
     <Content Include="1448102781_pinterest-p-logo-logotype.png" />
     <Content Include="aurora_sky-1680x1050-2.jpg" />
+    <Content Include="JavaScript.js" />
     <Content Include="JetBoxLogoType3.png" />
     <Content Include="main_background1.jpg" />
     <Content Include="main_background2.jpg" />
     <Content Include="MasterDesign.css" />
+    <Content Include="Movie8.aspx" />
+    <Content Include="Movie7.aspx" />
+    <Content Include="Movie6.aspx" />
+    <Content Include="Movie5.aspx" />
+    <Content Include="Movie4.aspx" />
+    <Content Include="Movie3.aspx" />
+    <Content Include="Movie2.aspx" />
     <Content Include="signupBackground.jpg" />
     <Content Include="packages.config" />
     <Content Include="JetBoxHome.Master" />
@@ -92,11 +100,19 @@
     <Content Include="NewMovieList.aspx" />
     <Content Include="AdminLogin.aspx" />
     <Content Include="SignUp2.aspx" />
-    <Content Include="Movie.aspx" />
+    <Content Include="Movie1.aspx" />
     <Content Include="ComingSoon.aspx" />
     <Content Include="Checkout.aspx" />
     <Content Include="RentSuccess.aspx" />
     <Content Include="EditProfile.aspx" />
+    <Content Include="Confirmation.aspx" />
+    <Content Include="Movie9.aspx" />
+    <Content Include="Movie10.aspx" />
+    <Content Include="Movie11.aspx" />
+    <Content Include="Movie12.aspx" />
+    <Content Include="Movie13.aspx" />
+    <Content Include="Movie14.aspx" />
+    <Content Include="Movie15.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,6 +127,55 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Movie8.aspx.cs">
+      <DependentUpon>Movie8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie8.aspx.designer.cs">
+      <DependentUpon>Movie8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie7.aspx.cs">
+      <DependentUpon>Movie7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie7.aspx.designer.cs">
+      <DependentUpon>Movie7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie6.aspx.cs">
+      <DependentUpon>Movie6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie6.aspx.designer.cs">
+      <DependentUpon>Movie6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie5.aspx.cs">
+      <DependentUpon>Movie5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie5.aspx.designer.cs">
+      <DependentUpon>Movie5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie4.aspx.cs">
+      <DependentUpon>Movie4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie4.aspx.designer.cs">
+      <DependentUpon>Movie4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie3.aspx.cs">
+      <DependentUpon>Movie3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie3.aspx.designer.cs">
+      <DependentUpon>Movie3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie2.aspx.cs">
+      <DependentUpon>Movie2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie2.aspx.designer.cs">
+      <DependentUpon>Movie2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="JetBoxHome.Master.cs">
       <DependentUpon>JetBoxHome.Master</DependentUpon>
@@ -189,12 +254,12 @@
     <Compile Include="SignUp2.aspx.designer.cs">
       <DependentUpon>SignUp2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Movie.aspx.cs">
-      <DependentUpon>Movie.aspx</DependentUpon>
+    <Compile Include="Movie1.aspx.cs">
+      <DependentUpon>Movie1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Movie.aspx.designer.cs">
-      <DependentUpon>Movie.aspx</DependentUpon>
+    <Compile Include="Movie1.aspx.designer.cs">
+      <DependentUpon>Movie1.aspx</DependentUpon>
     </Compile>
     <Compile Include="ComingSoon.aspx.cs">
       <DependentUpon>ComingSoon.aspx</DependentUpon>
@@ -223,6 +288,62 @@
     </Compile>
     <Compile Include="EditProfile.aspx.designer.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation.aspx.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirmation.aspx.designer.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie9.aspx.cs">
+      <DependentUpon>Movie9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie9.aspx.designer.cs">
+      <DependentUpon>Movie9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie10.aspx.cs">
+      <DependentUpon>Movie10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie10.aspx.designer.cs">
+      <DependentUpon>Movie10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie11.aspx.cs">
+      <DependentUpon>Movie11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie11.aspx.designer.cs">
+      <DependentUpon>Movie11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie12.aspx.cs">
+      <DependentUpon>Movie12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie12.aspx.designer.cs">
+      <DependentUpon>Movie12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie13.aspx.cs">
+      <DependentUpon>Movie13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie13.aspx.designer.cs">
+      <DependentUpon>Movie13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie14.aspx.cs">
+      <DependentUpon>Movie14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie14.aspx.designer.cs">
+      <DependentUpon>Movie14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie15.aspx.cs">
+      <DependentUpon>Movie15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie15.aspx.designer.cs">
+      <DependentUpon>Movie15.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

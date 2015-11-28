@@ -40,7 +40,6 @@ namespace JetBox
                         userPassword = txtPassword.Text;
 
                 SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
-
                 SqlCommand cmd = new SqlCommand();
 
                 cmd.CommandType = System.Data.CommandType.Text;

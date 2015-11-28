@@ -26,7 +26,7 @@
      </div>
     <div id ="fields" style ="background-color: #c9f1fd; text-align: center; border-radius: 15px">
         
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString4 %>" SelectCommand="SELECT [User_FName], [User_LName], [User_Password], [User_PaymentInfo] FROM [User]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString3 %>" SelectCommand="SELECT [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password], [User_PaymentInfo] FROM [User]"></asp:SqlDataSource>
         
         User Name:<br />
         <asp:TextBox ID="txtuName" runat="server" ReadOnly="True"></asp:TextBox>
@@ -46,9 +46,25 @@
         <asp:Label ID="LabelLast" runat="server" Text="*Required"></asp:Label>
         <br />
 
-        Country:<br />
-        <asp:TextBox ID="txtCountry" runat="server"></asp:TextBox>
-        <asp:Label ID="LabelCountry" runat="server" Text="*Required"></asp:Label>
+        Address:<br />
+        <asp:TextBox ID="txtAddress" runat="server"></asp:TextBox>
+        <asp:Label ID="LabelAddress" runat="server" Text="*Required"></asp:Label>
+        <br />
+        City:<br />
+        <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
+        <asp:Label ID="LabelCity" runat="server" Text="*Required"></asp:Label>
+        <br />
+        State:<br />
+        <asp:TextBox ID="txtState" runat="server"></asp:TextBox>
+        <asp:Label ID="LabelSate" runat="server" Text="*Required"></asp:Label>
+        <br />
+        Zip:<br />
+        <asp:TextBox ID="txtZip" runat="server"></asp:TextBox>
+        <asp:Label ID="LabelZip" runat="server" Text="*Required"></asp:Label>
+        <br />
+        Payment Info:<br />
+        <asp:TextBox ID="txtPayment" runat="server"></asp:TextBox>
+        <asp:Label ID="LabelPayment" runat="server" Text="*Required"></asp:Label>
         <br />
 
         Password:<br />

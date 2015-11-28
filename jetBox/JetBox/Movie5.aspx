@@ -1,0 +1,36 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="Movie5.aspx.cs" Inherits="JetBox.WebForm11" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <p><a href="home.aspx">Home</a></p>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <p><a href="MovieList.aspx">Movie</a></p>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
+    <p><a href="Login.aspx">Sign Out</a></p>
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
+    <p><a href="ComingSoon.aspx">Coming Soon</a></p>
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="MainContentArea" runat="server">
+    <script type="text/javascript" src="JavaScript.js">
+    </script>
+    <div id="Image">
+        <img src="https://image.tmdb.org/t/p/w185/e5jbaEiWYHtstuHPHl3lGPoRs4c.jpg" alt="Movie 5" id="movie5" />
+    </div>
+    <br />
+    <p>Movie Description</p>
+    <div id="Description">
+        <p>Having thought that monogamy was never possible, a commitment-phobic career woman may have to face her fears when she meets a good guy.</p>
+    </div>
+    <br />
+    <p>Movie Rating</p>
+    <div id="Rating">
+        <p> R </p>
+    </div>
+    <br />
+
+
+</asp:Content>
