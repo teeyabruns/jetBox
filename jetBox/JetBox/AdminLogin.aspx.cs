@@ -16,24 +16,24 @@ namespace JetBox
             Label1.Visible = false;
             usernameLbl.Visible = false;
 
-            SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "INSERT INTO [Admin] (Admin_Password, Admin_FName, Admin_LName, Admin_Email) VALUES ('admin123!', 'Adminf', 'Adminl', 'admin@admin.com')";
-            cmd.Connection = db;
-            db.Open();
-            //Label2.Text = cmd.CommandText;
-            try
-            {
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                Label1.Text = "An error occured writing into database!";
-                Label1.Text = ex.ToString();
-                Label1.Visible = true;
-            }
-            finally { db.Close(); }
+            //SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
+            //SqlCommand cmd = new SqlCommand();
+            //cmd.CommandType = System.Data.CommandType.Text;
+            //cmd.CommandText = "INSERT INTO [Admin] (Admin_Password, Admin_FName, Admin_LName, Admin_Email) VALUES ('admin123!', 'Adminf', 'Adminl', 'admin@admin.com')";
+            //cmd.Connection = db;
+            //db.Open();
+            ////Label2.Text = cmd.CommandText;
+            //try
+            //{
+            //    cmd.ExecuteNonQuery();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Label1.Text = "An error occured writing into database!";
+            //    Label1.Text = ex.ToString();
+            //    Label1.Visible = true;
+            //}
+            //finally { db.Close(); }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

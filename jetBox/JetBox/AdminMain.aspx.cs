@@ -47,6 +47,16 @@ namespace JetBox
             GridView1.Visible = true;
         }
 
+        protected void insertBtn_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.InsertParameters["Admin_Password"].DefaultValue = ((TextBox)GridView2.FooterRow.FindControl("txtAdminPassword")).Text;
+            SqlDataSource1.InsertParameters["Admin_FName"].DefaultValue = ((TextBox)GridView2.FooterRow.FindControl("txtAdminFName")).Text;
+            SqlDataSource1.InsertParameters["Admin_LName"].DefaultValue = ((TextBox)GridView2.FooterRow.FindControl("txtAdminLName")).Text;
+            SqlDataSource1.InsertParameters["Admin_Email"].DefaultValue = ((TextBox)GridView2.FooterRow.FindControl("txtAdminEmail")).Text;
+
+            SqlDataSource1.Insert();
+        }
+
         //when View Inventory button is clicked, the admin is redirected
         //to the inventory page where he or she will be able to edit, delete, and 
         //add movies

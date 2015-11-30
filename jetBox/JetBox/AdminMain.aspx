@@ -15,7 +15,7 @@
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
     
-<div id="AdminMainHolder" style="background-color: #c9f1fd;
+    <div id="AdminMainHolder" style="background-color: #c9f1fd;
     margin: 2% 0% 2% 0%; 
     padding: 2% 2% 2% 2%; 
     border-radius: 15px;">
@@ -25,7 +25,7 @@
 <br />
 <br />
 <br />
-<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="User_ID" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" ShowFooter="True">
+<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="User_ID" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" ShowFooter="True" style="margin-top: 0px">
     <AlternatingRowStyle BackColor="White" />
     <Columns>
         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -182,6 +182,123 @@
 
     <br />
 <br />
+    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="Admin_ID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" ShowFooter="True">
+        <AlternatingRowStyle BackColor="White" />
+        <Columns>
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+            <asp:TemplateField HeaderText="Admin_ID" InsertVisible="False" SortExpression="Admin_ID">
+                <EditItemTemplate>
+                    <asp:Label ID="AdminLabel1" runat="server" Text='<%# Eval("Admin_ID") %>'></asp:Label>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="AdminLabel1" runat="server" Text='<%# Bind("Admin_ID") %>'></asp:Label>
+                </ItemTemplate>
+                <FooterTemplate>
+                    <asp:LinkButton ID="insertBtn" validationGroup="INSERT2" OnClick="insertBtn_Click" runat="server">Insert</asp:LinkButton>
+                </FooterTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Admin_Password" SortExpression="Admin_Password">
+                <EditItemTemplate>
+                    <asp:TextBox ID="AdminTextBox1" runat="server" Text='<%# Bind("Admin_Password") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditAdminPass" runat="server" ErrorMessage="Admin Password is a required field"
+                        ControlToValidate="AdminTextBox1" Text="*" ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="AdminLabel2" runat="server" Text='<%# Bind("Admin_Password") %>'></asp:Label>
+                </ItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtAdminPassword" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertAdminPass" validationGroup="INSERT2" runat="server" ErrorMessage="Admin Password is a required field"
+                        ControlToValidate="txtAdminPassword" Text="*" ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </FooterTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Admin_FName" SortExpression="Admin_FName">
+                <EditItemTemplate>
+                    <asp:TextBox ID="AdminTextBox2" runat="server" Text='<%# Bind("Admin_FName") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditAdminFName" runat="server" ErrorMessage="Admin first name is a required field"
+                        ControlToValidate="AdminTextBox2" Text="*" ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="AdminLabel3" runat="server" Text='<%# Bind("Admin_FName") %>'></asp:Label>
+                </ItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtAdminFName" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertAdminFName" validationGroup="INSERT2" runat="server" ErrorMessage="Admin first name is a required field"
+                        ControlToValidate="txtAdminFName" Text="*" ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </FooterTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Admin_LName" SortExpression="Admin_LName">
+                <EditItemTemplate>
+                    <asp:TextBox ID="AdminTextBox3" runat="server" Text='<%# Bind("Admin_LName") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditAdminLName" runat="server" ErrorMessage="Admin last name is a required field"
+                        ControlToValidate="AdminTextBox3" Text="*" ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="AdminLabel4" runat="server" Text='<%# Bind("Admin_LName") %>'></asp:Label>
+                </ItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtAdminLName" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertAdminLName" validationGroup="INSERT2" runat="server" ErrorMessage="Admin last name is a required field"
+                        ControlToValidate="txtAdminLName" Text="*" ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </FooterTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Admin_Email" SortExpression="Admin_Email">
+                <EditItemTemplate>
+                    <asp:TextBox ID="AdminTextBox4" runat="server" Text='<%# Bind("Admin_Email") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEditAdminEmail" runat="server" ErrorMessage="Admin email is a required field"
+                        ControlToValidate="AdminTextBox4" Text="*" ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="AdminLabel5" runat="server" Text='<%# Bind("Admin_Email") %>'></asp:Label>
+                </ItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtAdminEmail" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvInsertAdminEmail" validationGroup="INSERT2" runat="server" ErrorMessage="Admin email is a required field"
+                        ControlToValidate="txtAdminEmail" Text="*" ForeColor="Red">
+                    </asp:RequiredFieldValidator>
+                </FooterTemplate>
+            </asp:TemplateField>
+        </Columns>
+        <EditRowStyle BackColor="#2461BF" />
+        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+        <RowStyle BackColor="#EFF3FB" />
+        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+        <SortedAscendingCellStyle BackColor="#F5F7FB" />
+        <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+        <SortedDescendingCellStyle BackColor="#E9EBEF" />
+        <SortedDescendingHeaderStyle BackColor="#4870BE" />
+    </asp:GridView>
+
+    <asp:ValidationSummary  ID="ValidationSummary4" ForeColor="Red" runat="server" />
+    <asp:ValidationSummary ValidationGroup="INSERT2" ID="ValidationSummary3" ForeColor="Red" runat="server" />
+
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString5 %>" DeleteCommand="DELETE FROM [Admin] WHERE [Admin_ID] = @Admin_ID" InsertCommand="INSERT INTO [Admin] ([Admin_Password], [Admin_FName], [Admin_LName], [Admin_Email]) VALUES (@Admin_Password, @Admin_FName, @Admin_LName, @Admin_Email)" SelectCommand="SELECT [Admin_ID], [Admin_Password], [Admin_FName], [Admin_LName], [Admin_Email] FROM [Admin]" UpdateCommand="UPDATE [Admin] SET [Admin_Password] = @Admin_Password, [Admin_FName] = @Admin_FName, [Admin_LName] = @Admin_LName, [Admin_Email] = @Admin_Email WHERE [Admin_ID] = @Admin_ID">
+        <DeleteParameters>
+            <asp:Parameter Name="Admin_ID" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="Admin_Password" Type="String" />
+            <asp:Parameter Name="Admin_FName" Type="String" />
+            <asp:Parameter Name="Admin_LName" Type="String" />
+            <asp:Parameter Name="Admin_Email" Type="String" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Admin_Password" Type="String" />
+            <asp:Parameter Name="Admin_FName" Type="String" />
+            <asp:Parameter Name="Admin_LName" Type="String" />
+            <asp:Parameter Name="Admin_Email" Type="String" />
+            <asp:Parameter Name="Admin_ID" Type="Int32" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
 <br />
 
 </div>
