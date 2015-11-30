@@ -10,7 +10,7 @@
 namespace JetBox {
     
     
-    public partial class WebForm4 {
+    public partial class WebForm26 {
         
         /// <summary>
         /// TextBox1 control.
@@ -29,6 +29,15 @@ namespace JetBox {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
         /// TextBox2 control.
@@ -409,15 +418,6 @@ namespace JetBox {
         protected global::System.Web.UI.WebControls.TextBox MovieSelectTxt;
         
         /// <summary>
-        /// SubmitMovie control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubmitMovie;
-        
-        /// <summary>
         /// MaxMovieLabel control.
         /// </summary>
         /// <remarks>
@@ -425,5 +425,14 @@ namespace JetBox {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label MaxMovieLabel;
+        
+        /// <summary>
+        /// ButtonSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonSubmit;
     }
 }

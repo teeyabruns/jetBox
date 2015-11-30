@@ -94,8 +94,9 @@
     <Content Include="Login.css" />
     <Content Include="slide_engine.js" />
     <Content Include="slide_window.css" />
+    <Content Include="MovieList.css" />
+    <Content Include="UserProfile.css" />
     <Content Include="UserProfile.aspx" />
-    <Content Include="MovieList.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="NewMovieList.aspx" />
     <Content Include="AdminLogin.aspx" />
@@ -113,6 +114,7 @@
     <Content Include="Movie13.aspx" />
     <Content Include="Movie14.aspx" />
     <Content Include="Movie15.aspx" />
+    <Content Include="MovieList.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -218,13 +220,6 @@
     </Compile>
     <Compile Include="UserProfile.aspx.designer.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MovieList.aspx.cs">
-      <DependentUpon>MovieList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MovieList.aspx.designer.cs">
-      <DependentUpon>MovieList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -344,6 +339,13 @@
     </Compile>
     <Compile Include="Movie15.aspx.designer.cs">
       <DependentUpon>Movie15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieList.aspx.cs">
+      <DependentUpon>MovieList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieList.aspx.designer.cs">
+      <DependentUpon>MovieList.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

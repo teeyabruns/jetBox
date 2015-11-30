@@ -41,8 +41,9 @@
     <p><a href="Checkout.aspx">Checkout</a></p>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
-    
-    <table style="width:100%;">
+    <link type ="text/css" rel="stylesheet" href="UserProfile.css" />
+    <div id="profile">
+    <table>
         <tr>
             <td class="auto-style3" colspan="3">
                 <asp:TextBox ID="NameTxt" runat="server" ReadOnly="True" Width="772px"></asp:TextBox>
@@ -120,7 +121,5 @@
         </tr>
     </table>
     
-    </p>
-    <p>
-    </p>
+    </div>
 </asp:Content>
