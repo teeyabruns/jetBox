@@ -4,12 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-    <a href="home.aspx">Home</a></p>
+        &nbsp;</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
-    <a href="MovieList.aspx">Movies List</a>
-    </p>
+        &nbsp;</p>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
     <p>
@@ -18,8 +17,7 @@
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
     <p>
-    <a href="MovieSearch.aspx">Search</a>
-    </p>
+        &nbsp;</p>
 </asp:Content>
 
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
@@ -39,7 +37,7 @@
     <br />
     <br />
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString4 %>" SelectCommand="SELECT [Admin_ID], [Admin_Password], [Admin_FName], [Admin_LName], [Admin_Email] FROM [Admin]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString6 %>" SelectCommand="SELECT [Admin_ID], [Admin_Password], [Admin_FName], [Admin_LName], [Admin_Email] FROM [Admin]"></asp:SqlDataSource>
     
 </div>
 

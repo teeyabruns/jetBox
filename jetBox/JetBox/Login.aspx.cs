@@ -61,7 +61,7 @@ namespace JetBox
                 {
                     if (cat == 1)
                     {
-                        LabelIDWarning.Text = "Sucsess!";
+                        LabelIDWarning.Text = "Success!";
                         LabelIDWarning.Visible = true;
                         LabelPasswordWarning.Visible = false;
                     }
@@ -102,7 +102,7 @@ namespace JetBox
                 {
                     if (cat == 2)
                     {
-                        LabelIDWarning.Text = "Sucsess!";
+                        LabelIDWarning.Text = "Success!";
                         LabelIDWarning.Visible = true;
                         LabelPasswordWarning.Visible = false;
 

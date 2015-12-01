@@ -1,24 +1,19 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="JetBox.WebForm2" %>
+﻿<%@ Page Title="Sign Up" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="JetBox.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <link type ="text/css" rel="stylesheet" href="signup.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-        <a href ="home.aspx">Home</a></p>
+        &nbsp;</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <p><a href ="MovieList.aspx">
-        Movies</a></p>
-</asp:Content>
+    </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
-    <p><a href="Login.aspx">
-        Sign In</a></p>
+    <p>&nbsp;</p>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
-    <p><a href="ComingSoon.aspx">
-        Coming Soon</a></p>
-</asp:Content>
+    </asp:Content>
 
 <asp:Content ID="Content7" ContentPlaceHolderID="MainContentArea" runat="server">
         <div id ="DisplaySignupDiv">
@@ -34,7 +29,7 @@
                     <br />
                     <br />
                     <p><a href="\AdminLogIn.aspx">Admin Log In</a></p>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString3 %>" SelectCommand="SELECT [User_ID], [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password] FROM [User]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JetBoxConnectionString8 %>" SelectCommand="SELECT [User_ID], [User_FName], [User_LName], [User_Address], [User_City], [User_State], [User_Zip], [User_Email], [User_Password] FROM [User]"></asp:SqlDataSource>
             </div>
         </div>
 </asp:Content>

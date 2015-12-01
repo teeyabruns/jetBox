@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="Checkout.aspx.cs" Inherits="JetBox.WebForm13" %>
+﻿<%@ Page Title="Checkout" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="Checkout.aspx.cs" Inherits="JetBox.WebForm13" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link type ="text/css" rel="stylesheet" href="home.css" />
 </asp:Content>

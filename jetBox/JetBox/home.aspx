@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="JetBox.WebForm1" %>
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/JetBoxHome.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="JetBox.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link type ="text/css" rel="stylesheet" href="home.css" />
 </asp:Content>
@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
     <p>
-    <a href="Login.aspx">Sign In</a></p>
+    <a href="Login.aspx">Sign Out</a></p>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
     <p><a href="Checkout.aspx">Checkout</a></p>
